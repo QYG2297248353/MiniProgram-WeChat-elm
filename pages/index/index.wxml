@@ -1,2 +1,52 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view class="part1">
+  <!-- 位置信息 -->
+  <view class="row1">
+    <view class="address">
+      <image src="/image/address.png"></image>
+      <text class="add">重庆信息技术职业学院金龙校区</text>
+      <text>></text>
+    </view>
+    <text class="tip">美食果蔬医药~30分钟送达</text>
+  </view>
+  <!-- 搜索 -->
+  <view class="row2">
+    <view class="search-box">
+      <icon type="search" class="search-icon"></icon>
+      <input type="text" class="search-input" />
+      <button class="search-btn" id="searchBtn">搜索</button>
+    </view>
+    <!-- 内容 -->
+    <view class="small-tips">
+      <text class="tip">一号店</text>
+      <text class="tip">一号店</text>
+      <text class="tip">一号店</text>
+      <text class="tip">一号店</text>
+      <text class="tip">一号店</text>
+      <text class="tip">一号店</text>
+      <text class="tip">一号店</text>
+    </view>
+  </view>
+  <view class="row3">
+    <navigator class="nav">
+      <image src="/image/01.png"></image>
+      <text>美食</text>
+    </navigator>
+    <navigator class="nav">
+      <image src="/image/02.png"></image>
+      <text>商超</text>
+    </navigator>
+    <navigator class="nav">
+      <image src="/image/03.png"></image>
+      <text>水果</text>
+    </navigator>
+    <navigator class="nav">
+      <image src="/image/04.png"></image>
+      <text>送药上门</text>
+    </navigator>
+    <navigator class="nav">
+      <image src="/image/05.png"></image>
+      <text>甜品饮品</text>
+    </navigator>
+  </view>
+</view>
