@@ -4,7 +4,7 @@
   <view class="row1">
     <view class="address">
       <image src="/image/address.png"></image>
-      <text class="add">重庆信息技术职业学院金龙校区</text>
+      <text class="add">{{myAddress}}</text>
       <text>></text>
     </view>
     <text class="tip">美食果蔬医药~30分钟送达</text>
