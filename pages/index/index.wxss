@@ -114,6 +114,7 @@ page{
 /* 20210730 */
 .part2{
   background-color: #f5f5f5;
+  padding-bottom: 50rpx;
 }
 .n{
   display: flex;
@@ -135,5 +136,60 @@ page{
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  
+}
+.banners{
+  margin-top: 40rpx;
+  height: 180rpx;
+}
+.banners image{
+  display: block;
+  width: 700rpx;
+  height: 179rpx;
+  margin: 0 auto;
+}
+.shop{
+  width: 700rpx;
+  height: 256rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+  margin: 18rpx auto 0;
+  padding: 22rpx;
+  box-sizing: border-box;
+  display: flex;
+}
+.shop image{
+  width: 206rpx;
+  height: auto;
+  margin-right: 10rpx;
+}
+.shop-right{
+  flex: 1;
+  background-color: rebeccapurple;
+}
+.p1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p1 text{
+  display: block;
+  font-size: 30rpx;
+  color: #000000;
+  font-weight: bold;
+  width: 358rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.p1 .lines{
+  display: flex;
+  height: 16px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.p1 .line{
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #000000;
 }

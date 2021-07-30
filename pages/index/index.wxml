@@ -95,4 +95,37 @@
       <text>送药上门</text>
     </navigator>
   </view>
+  <swiper class="banners" circular="{{true}}" autoplay="{{true}}">
+    <swiper-item>
+      <image src="/image/banner.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/banner2.png"></image>
+    </swiper-item>
+  </swiper>
+  <view class="shop">
+    <image src="/image/img1.png" mode="widthFix"></image>
+    <view class="shop-right">
+      <view class="p1">
+        <text>华莱士·全鸡汉堡（万州未来城店）</text>
+        <view class="lines" bindtap="showUnlike">
+          <view class="line"></view>
+          <view class="line"></view>
+          <view class="line"></view>
+        </view>
+      </view>
+      <view class="p2">
+        <view class="left">
+          <text class="score"><text style="font-weight:bold">4.6</text>分</text>
+          <text class="sale">月售 1156</text>
+        </view>
+        <view class="right">
+          <text class="time">48分钟 1.8km</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="shop">
+
+  </view>
 </view>
