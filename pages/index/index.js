@@ -6,6 +6,45 @@ Page({
    */
   data: {
     myAddress:"重庆信息技术职业学院金龙校区",
+    shopList:[{
+      "imgPath":"/image/img1.png",
+      "title":"华莱士·全鸡汉堡（沙龙路二段奥提斯）",
+      "score":"4.6",
+      "sale":"8769",
+      "time":"48分钟",
+      "distance":"1.8km",
+    },
+    {
+      "imgPath":"/image/img2.png",
+      "title":"书亦烧仙草（重庆万州万达广场店）",
+      "score":"2.3",
+      "sale":"1231",
+      "time":"12分钟",
+      "distance":"9.9km",
+    }],
+    unlike:-1
+  },
+  showUnlike:function(e){
+    console.log(e);
+    let index=e.currentTarget.dataset.index;
+    this.setData({
+      unlike:index
+    })
+  },
+  cancelUnlike:function(){
+    this.setData({
+      unlike:-1
+    })
+  },
+  sureUnlike:function(e){
+    let index=e.currentTarget.dataset.index;
+    index=Number(index);
+    let shops=this.data.shopList;
+    shops.splice(index,1);
+    this.setData({
+      shopList:shops,
+      unlike:-1
+    })
   },
 
   onLoad: function () {

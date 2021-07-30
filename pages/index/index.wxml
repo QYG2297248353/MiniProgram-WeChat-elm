@@ -103,28 +103,49 @@
       <image src="/image/banner2.png"></image>
     </swiper-item>
   </swiper>
-  <view class="shop">
-    <image src="/image/img1.png" mode="widthFix"></image>
-    <view class="shop-right">
-      <view class="p1">
-        <text>华莱士·全鸡汉堡（万州未来城店）</text>
-        <view class="lines" bindtap="showUnlike">
-          <view class="line"></view>
-          <view class="line"></view>
-          <view class="line"></view>
+  <block wx:for="{{shopList}}">
+    <view class="shop">
+      <image src="{{item.imgPath}}" mode="widthFix"></image>
+      <view class="shop-right">
+        <view class="p1">
+          <text>{{item.title}}</text>
+          <view class="lines" data-index="{{index}}" bindtap="showUnlike">
+            <view class="line"></view>
+            <view class="line"></view>
+            <view class="line"></view>
+          </view>
+        </view>
+        <view class="p2">
+          <view class="left">
+            <text class="score"><text style="font-weight:bold">{{item.score}}</text>分</text>
+            <text class="sale">月售 {{item.sale}}</text>
+          </view>
+          <view class="right">
+            <text class="time">{{item.time}} {{item.distance}}</text>
+          </view>
+        </view>
+        <view class="p3">
+          <text space="emsp">起送费 ￥18 免配送费<text class="del">￥3</text></text>
+        </view>
+        <view class="p4">
+          <text>“经常点吃鸡单人餐”</text>
+        </view>
+        <view class="p5">
+          <view class="yh">
+            <text class="by">百亿补贴</text>
+            <text>2元</text>
+          </view>
+          <text class="yh">满38减16</text>
+          <text class="yh">满70减36</text>
         </view>
       </view>
-      <view class="p2">
-        <view class="left">
-          <text class="score"><text style="font-weight:bold">4.6</text>分</text>
-          <text class="sale">月售 1156</text>
-        </view>
-        <view class="right">
-          <text class="time">48分钟 1.8km</text>
-        </view>
+
+      <view class="cover" wx:if="{{unlike==index}}" catchtap="cancelUnlike">
+        <button class="unlike" id="unBtn" data-index="{{index}}" catchtap="sureUnlike">不喜欢</button>
       </view>
+
     </view>
-  </view>
+  </block>
   <view class="shop">
 
   </view>

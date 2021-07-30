@@ -149,7 +149,6 @@ page{
 }
 .shop{
   width: 700rpx;
-  height: 256rpx;
   background-color: #fff;
   border-radius: 30rpx;
   margin: 18rpx auto 0;
@@ -164,7 +163,6 @@ page{
 }
 .shop-right{
   flex: 1;
-  background-color: rebeccapurple;
 }
 .p1{
   display: flex;
@@ -192,4 +190,81 @@ page{
   height: 3px;
   border-radius: 50%;
   background-color: #000000;
+}
+.p2{
+  margin-top: 12rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20rpx;
+  color: #4c4c4c;
+}
+.score{
+  color: #ff6100;
+}
+.sale{
+  margin-left: 20rpx;
+}
+.p3{
+  margin-top: 16rpx;
+  font-size: 22rpx;
+  color: #4c4c4c;
+}
+.p3 .del{
+  text-decoration: line-through;
+  color: #d3d3d3;
+}
+.p4{
+  margin-top: 10rpx;
+}
+.p4 text{
+  padding: 8rpx;
+  background-color: #ff9959e3;
+  border-radius: 16rpx;
+  font-size: 20rpx;
+  display: inline-block;
+}
+.p5{
+  margin-top: 8rpx;
+  font-size: 18rpx;
+  color: #fd2a0f;
+  display: flex;
+}
+.yh{
+  display: inline-block;
+  padding: 3rpx 6rpx;
+  border: 1px solid #f8bcb5;
+  margin-right: 4rpx;
+  border-radius: 16rpx;
+}
+.by{
+  background-color: #ff6364;
+  color: #fff;
+  position: relative;
+  left: -6rpx;
+  padding: 3rpx 6rpx;
+}
+
+/* 遮罩层 */
+.shop{
+  position: relative;
+}
+.cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10rpx;
+  background-color: rgba(0, 0, 0, .8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#unBtn{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100%;
+  padding: 0;
+  font-weight: normal;
+  line-height: 150rpx;
 }
