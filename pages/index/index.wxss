@@ -1,4 +1,5 @@
 /* pages/index/index.wxss */
+/* 20210729 */
 page{
   background-color: #28c9ff
 }
@@ -108,4 +109,31 @@ page{
   font-size: 25rpx;
   color: #4f4f4f;
   padding-top: 10rpx;
+}
+
+/* 20210730 */
+.part2{
+  background-color: #f5f5f5;
+}
+.n{
+  display: flex;
+  flex-direction: column;
+  width: 92rpx;
+  align-items: center;
+}
+.n image{
+  width: auto;
+  height: 46rpx;
+}
+.n text{
+  font-size: 22rpx;
+  line-height: 3;
+}
+.r1{
+  padding-top: 40rpx;
+  width: 668rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  
 }

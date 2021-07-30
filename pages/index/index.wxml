@@ -50,3 +50,49 @@
     </navigator>
   </view>
 </view>
+<view class="part2">
+  <view class="r1">
+    <navigator class="n">
+      <image src="/image/11.png" mode="heightFix"></image>
+      <text>美食</text>
+    </navigator>
+    <navigator class="n">
+      <image src="/image/12.png" mode="heightFix"></image>
+      <text>汉堡披萨</text>
+    </navigator>
+    <navigator class="n">
+      <image src="/image/13.png" mode="heightFix"></image>
+      <text>红包赚钱</text>
+    </navigator>
+    <navigator class="n">
+      <image src="/image/14.png" mode="heightFix"></image>
+      <text>炸鸡烤串</text>
+    </navigator>
+    <navigator class="n">
+      <image src="/image/15.png" mode="heightFix"></image>
+      <text>买菜</text>
+    </navigator>
+  </view>
+  <view class="r1">
+    <navigator class="n">
+      <image src="/image/21.png" mode="heightFix"></image>
+      <text>鲜花绿植</text>
+    </navigator>
+    <navigator class="n">
+      <image src="/image/22.png" mode="heightFix"></image>
+      <text>日韩料理</text>
+    </navigator>
+    <navigator class="n">
+      <image src="/image/23.png" mode="heightFix"></image>
+      <text>地方美食</text>
+    </navigator>
+    <navigator class="n">
+      <image src="/image/24.png" mode="heightFix"></image>
+      <text>快餐便当</text>
+    </navigator>
+    <navigator class="n">
+      <image src="/image/25.png" mode="heightFix"></image>
+      <text>送药上门</text>
+    </navigator>
+  </view>
+</view>
