@@ -1,0 +1,17 @@
+<!--list/list.wxml-->
+<page-meta>
+  <navigation-bar title="{{nTitle}}"></navigation-bar>
+</page-meta>
+<view class="header">
+  <view class="sort {{isSort?'active':''}}" bindtap="setSort">{{sortType}}</view>
+  <view class="dis">距离最近</view>
+  <view class="sale">销量最高</view>
+  <view class="sx">筛选</view>
+  <view class="sort-box" wx:if="{{isSort}}">
+    <view class="sort-content">
+        <block wx:for="{{sortArr}}">
+          <view bindtap="chooseSort" data-name="{{item}}">{{item}}</view>
+        </block>
+    </view>
+  </view>
+</view>

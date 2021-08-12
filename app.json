@@ -1,8 +1,10 @@
 {
+  "entryPagePath": "pages/list/list",
   "pages": [
     "pages/index/index",
     "pages/order/order",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/list/list"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -20,24 +22,24 @@
   "tabBar": {
     "selectedColor": "#28c9ff",
     "list": [
-    {
-      "text": "首页",
-      "pagePath": "pages/index/index",
-      "iconPath": "image/icon-1.png",
-      "selectedIconPath": "image/icon-choose-1.png"
-    },
-    {
-      "text": "订单",
-      "pagePath": "pages/order/order",
-      "iconPath": "image/icon-2.png",
-      "selectedIconPath": "image/icon-choose-2.png"
-    },
-    {
-      "text": "我的",
-      "pagePath": "pages/my/my",
-      "iconPath": "image/icon-3.png",
-      "selectedIconPath": "image/icon-choose-3.png"
-    }
-  ]
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "image/icon-1.png",
+        "selectedIconPath": "image/icon-choose-1.png"
+      },
+      {
+        "text": "订单",
+        "pagePath": "pages/order/order",
+        "iconPath": "image/icon-2.png",
+        "selectedIconPath": "image/icon-choose-2.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/my",
+        "iconPath": "image/icon-3.png",
+        "selectedIconPath": "image/icon-choose-3.png"
+      }
+    ]
   }
 }

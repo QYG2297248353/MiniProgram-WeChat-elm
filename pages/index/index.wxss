@@ -42,6 +42,7 @@ page{
   overflow: hidden;
   width: 280rpx;
 }
+
 .tip{
   width: 274rpx;
   color: #9a9a9a;

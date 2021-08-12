@@ -1,0 +1,66 @@
+/* list/list.wxss */
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 30rpx;
+  font-size: 26rpx;
+}
+.sort{
+  width: 230rpx;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.dis,.sale{
+  color: #666666;
+}
+.sx{
+  width: 150rpx;
+  text-align: right;
+}
+/* 小三角 */
+.sort:after{
+  content: "";
+  margin-left: 10rpx;
+  border-left: 10rpx solid transparent;
+  border-right: 10rpx solid transparent;
+  border-top: 10rpx solid #000000;
+  transition: transform .3s;
+}
+.sort-box{
+  background-color: rgba(0, 0, 0, .6);
+  position: fixed;
+  top: 66rpx;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  animation: fadeIn .3s both;
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.sort-content{
+  padding: 20rpx 30rpx;
+  background-color: #ffffff;
+  color: #666666;
+  animation: show .3s both;
+}
+
+.sort-content view{
+  font-size: 26rpx;
+}
+@keyframes show{
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}

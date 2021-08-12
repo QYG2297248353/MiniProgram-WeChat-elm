@@ -60,8 +60,18 @@ Page({
             that.setData({
               myAddress: response.data.result.address
             })
+            console.log(that.data.myAddress);
           }
         })
+      }
+    });
+    wx.cloud.init();
+    const db = wx.cloud.database({
+      env: 'elm-7g84c7ot790169ef'
+    });
+    db.collection('list').get({
+      success: function(res) {
+        console.log(res.data)
       }
     })
   },
@@ -76,7 +86,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**
