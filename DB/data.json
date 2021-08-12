@@ -1,0 +1,34 @@
+{
+  "shopLogo":"image/img1.png",
+  "isPP":true,
+  "shopName":"华莱士",
+  "isFP":false,
+  "isBX":false,
+  "score":"4.6",
+  "sale":"2545",
+  "goBuy":"15",
+  "fee":"3",
+  "distance":"1.4",
+  "time":"41",
+  "active":{
+    "jian":"满29减8，满59减28，满99减35",
+    "pei":"配送费减免3元"
+  }
+}
+{
+  "shopLogo":"image/img2.png",
+  "isPP":true,
+  "shopName":"喜涮涮",
+  "isFP":false,
+  "isBX":false,
+  "score":"4.6",
+  "sale":"2545",
+  "goBuy":"45",
+  "fee":"3",
+  "distance":"5.4",
+  "time":"41",
+  "active":{
+    "jian":"满12减2，满34减28，满88减55",
+    "pei":"配送费减免3元"
+  }
+}
