@@ -269,3 +269,7 @@ page{
   font-weight: normal;
   line-height: 150rpx;
 }
+.andjcss{
+  opacity: 0.9;
+  transform: scale(0.95, 0.95);
+}

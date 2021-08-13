@@ -15,3 +15,48 @@
     </view>
   </view>
 </view>
+<view class="shop-list">
+  <block wx:for="{{shopList}}">
+    <view class="shop-item">
+      <image src="/{{item.shopLogo}}" class="shop-logo"></image>
+      <view class="shop-right">
+        <view class="shop-row1">
+          <view class="pp" wx:if="{{item.isPP}}">品牌</view>
+          <view class="shop-name">{{item.shopName}}</view>
+          <view class="fp-box">
+            <view wx:if="{{item.isFP}}">票</view>
+            <view wx:if="{{item.isBX}}">保</view>
+          </view>
+        </view>
+        <view class="shop-row2">
+          <view class="score-box">
+            <view class="star-box">
+              <view class="choose-star">
+                <image src="/image/choose-star.png"></image>
+              </view>
+              <image class="star" src="/image/star.png"></image>
+            </view>
+            <text class="score">{{item.score}}</text>
+          </view>
+          <view class="sale">月售{{item.sale}}单</view>
+        </view>
+        <view class="shop-row3">
+          <view class="row3-left">
+            ￥{{item.goBuy}}起送 | 配送费￥3
+          </view>
+          <view class="row3-right">
+            {{item.distance}}Km | <text class="time">{{item.time}}分钟</text>
+          </view>
+        </view>
+      </view>
+      <view class="shop-active">
+        <view class="active-line" wx:for="{{item.actives}}" wx:for-index="k" wx:for-item="i">
+          <view class="jian" wx:if="{{k=='jian'}}">减</view>
+          <view class="te" wx:if="{{k=='te'}}">特</view>
+          <view class="pei" wx:if="{{k=='pei'}}">配</view>
+          <text>{{i}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

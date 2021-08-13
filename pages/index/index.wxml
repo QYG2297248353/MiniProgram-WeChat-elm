@@ -28,7 +28,7 @@
     </view>
   </view>
   <view class="row3">
-    <navigator class="nav">
+    <navigator class="nav" url="/pages/list/list" hover-class="andjcss">
       <image src="/image/01.png"></image>
       <text>美食</text>
     </navigator>

@@ -1,4 +1,6 @@
 // list/list.js
+var data=require("data.js");
+var shops=data.main.shops;
 Page({
 
   /**
@@ -8,7 +10,8 @@ Page({
     nTitle:"美食--黄新龙",
     isSort:false,
     sortType:"综合排序",
-    sortArr:["综合排序","距离最近","销量最高","评分从低到高","起送价从低到高","配送费从低到高","配送时间最短"]
+    sortArr:["综合排序","距离最近","销量最高","评分从低到高","起送价从低到高","配送费从低到高","配送时间最短"],
+    shopList:shops
   },
   setSort:function(){
     this.data.isSort=!this.data.isSort;
